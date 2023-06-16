@@ -31,7 +31,8 @@ body {
     background-color: var(--violet);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin: 2.5em;
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 main {
@@ -107,6 +108,10 @@ i {
 
 .icon i {
     color: inherit;
+}
+
+footer {
+    margin-top: 2.5em;
 }
 
 /* Desktop */
