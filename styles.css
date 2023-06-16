@@ -1,0 +1,131 @@
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    font-size: clamp(16px, 0.75vw + 0.82rem, 24px);
+}
+
+#banner {
+    width: min(50%, 300px);
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+body {
+    background-image: url("images/bg-mobile.svg");
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 2.5em;
+}
+
+main {
+    text-align: center;
+    margin-block: 3.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#illustration-container {
+    flex: 65% 1 2;
+    margin-block: 1.5em;
+}
+
+#illustration-container > img {
+    width: 100%;
+}
+
+.text {
+    flex: 35% 1 1;
+}
+
+.btn {
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(50%, 180px);
+    padding: 0.7em 2em;
+    color: black;
+    border-radius: 35px;
+    margin-block: 1.5em;
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+.btn:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+i {
+    font-size: 0.9em;
+    color: white;
+}
+
+.icons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    border-radius: 50%;
+    text-decoration: none;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid white;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon:hover {
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta);
+}
+
+.icon i {
+    color: inherit;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 4em 3em 3.5em;
+        background-image: url("images/bg-desktop.svg");
+        background-size: cover;
+    }
+
+    main {
+        flex-direction: row;
+        text-align: left;
+        gap: 5%;
+        margin-bottom: 0.5em;
+    }
+
+    .icons {
+        margin-right: 0;
+    }
+
+}
